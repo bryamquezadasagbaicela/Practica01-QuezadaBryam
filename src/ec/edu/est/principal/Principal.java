@@ -5,16 +5,16 @@
  */
 package ec.edu.est.principal;
 
-import ec.edu.est.clases.Comensal;
-import ec.edu.est.clases.Menu;
-import ec.edu.est.clases.Mesa;
-import ec.edu.est.clases.Reservacion;
-import ec.edu.est.clases.Tiquet;
-import java.util.Date;
-import java.util.Scanner;
+import ec.edu.est.clases.Comensal; //importa datos de la clase Comensal 
+import ec.edu.est.clases.Menu; //importa datos de la clase Menu
+import ec.edu.est.clases.Mesa; //importa datos de la clase Mesa
+import ec.edu.est.clases.Reservacion; //importa datos de la clase Reservacion
+import ec.edu.est.clases.Tiquet; //importa datos de la clase Tiquet 
+import java.util.Date; //importa datos de la clase Comensal 
+import java.util.Scanner; // Importa el escaner para leer datos ingresados por el teclado
 
 /**
- *
+ * clase principal
  * @author Bryam Quezada
  * @since 2019
  * @version 2.0
@@ -23,11 +23,13 @@ public class Principal {
 
     private static String s;
 
-    public static void main(String[] args) {
-        Scanner l = new Scanner(System.in);
+    public static void main(String[] args) { // Es el punto de entrada a un proceso o programa en la clase principal
+
+        Scanner l = new Scanner(System.in); // Sirve para crear un vinculo de la clase Scanner y obtener datos (System.in)
 
         System.out.println("");
         do {
+            // Nos permite imprimir algo por pantalla en una ventana de consola
             System.out.println("----------------------------------------");
             System.out.println("              MENU OPCIONES             ");
             System.out.println("1. Crear un objeto de tipo comensal");
@@ -44,8 +46,8 @@ public class Principal {
                     //Crear objeto (instanciar)
                     Comensal c = new Comensal();
                     //Seteo o especificación de los datos del objeto Comensal.
-                    c.setNombreComensal("Quezada Bryam");
-                    c.setCedulaComensal("010713669-9");
+                    c.setNombreComensal("BryamQuezada");
+                    c.setCedulaComensal("0107136699");
                     c.setUbicacion("Ricaurte");
                     //Recuperación de los valores
                     System.out.println("clase: Comensal");
@@ -54,14 +56,14 @@ public class Principal {
                     System.out.println("\tCedulaComensal:" + c.getCedulaComensal());
                     System.out.println("\tUbicacion:" + c.getUbicacion());
                     //Mostrar valores a partir de método toString()
-                    System.out.println("\ntoString():\n"+ c.toString());
+                    System.out.println("\ntoString():\n" + c.toString());
                     System.out.println("-----------------------------------------");
                     break;
                 case 2:
                     System.out.println("-----------------------------------------");
-                     //Crear objeto (instanciar)
+                    //Crear objeto (instanciar)
                     Reservacion r = new Reservacion();
-                     //Seteo o especificación de los datos del objeto Reservacion.
+                    //Seteo o especificación de los datos del objeto Reservacion.
                     r.setNumeroReservacion("54");
                     r.setFechaReservacion(null);
                     System.out.println("clase: Mesa");
@@ -69,14 +71,14 @@ public class Principal {
                     System.out.println("\tnumero reservacion:" + r.getNumeroReservacion());
                     System.out.println("\tfecha reservacion:" + r.getFechaReservacion());
                     //Mostrar valores a partir de método toString()
-                    System.out.println("\ntoString():\n"+ r.toString());
+                    System.out.println("\ntoString():\n" + r.toString());
                     System.out.println("-----------------------------------------");
                     break;
                 case 3:
                     System.out.println("-----------------------------------------");
-                     //Crear objeto (instanciar)
+                    //Crear objeto (instanciar)
                     Mesa m = new Mesa();
-                     //Seteo o especificación de los datos del objeto Mesa.
+                    //Seteo o especificación de los datos del objeto Mesa.
                     m.setUbicacionSucursal("Av. Remigio Crespo y Remigio Romero Esq.");
                     m.setNumeroMesa("12");
                     m.setNumeroPiso("2 ");
@@ -86,14 +88,14 @@ public class Principal {
                     System.out.println("\tNumero Mesa:" + m.getNumeroMesa());
                     System.out.println("\tNumero Piso:" + m.getNumeroPiso());
                     //Mostrar valores a partir de método toString()
-                    System.out.println("\ntoString():\n"+ m.toString());
+                    System.out.println("\ntoString():\n" + m.toString());
                     System.out.println("-----------------------------------------");
                     break;
                 case 4:
                     System.out.println("-----------------------------------------");
-                     //Crear objeto (instanciar)
+                    //Crear objeto (instanciar)
                     Menu mn = new Menu();
-                     //Seteo o especificación de los datos del objeto Menu.
+                    //Seteo o especificación de los datos del objeto Menu.
                     mn.setNombrePlato("Seco de Pollo");
                     mn.setNumeroPlatos("4");
                     mn.setContenidoPlato("arroz, pollo, ensalada y papas fritas");
@@ -103,14 +105,14 @@ public class Principal {
                     System.out.println("\tNumero Platos:" + mn.getNumeroPlatos());
                     System.out.println("\tContenido:" + mn.getContenidoPlato());
                     //Mostrar valores a partir de método toString()
-                    System.out.println("\ntoString():\n"+ mn.toString());
+                    System.out.println("\ntoString():\n" + mn.toString());
                     System.out.println("-----------------------------------------");
                     break;
                 case 5:
                     System.out.println("-----------------------------------------");
-                     //Crear objeto (instanciar)
+                    //Crear objeto (instanciar)
                     Tiquet t = new Tiquet();
-                     //Seteo o especificación de los datos del objeto Tiquet.
+                    //Seteo o especificación de los datos del objeto Tiquet.
                     t.setUbicacionSucursal("Av de las América y Abelardo J. Andrade");
                     t.setUsdDescripcion("1 arroz con pollo y 1 cola cola personal");
                     t.setFecha(null);
@@ -120,7 +122,7 @@ public class Principal {
                     System.out.println("\tUsdDescripcion:" + t.getUsdDescripcion());
                     System.out.println("\tFecha:" + t.getFecha());
                     //Mostrar valores a partir de método toString()
-                    System.out.println("\ntoString():\n"+ t.toString());
+                    System.out.println("\ntoString():\n" + t.toString());
                     System.out.println("-----------------------------------------");
                     break;
             }

@@ -28,7 +28,7 @@ public class Comensal {
      * metodo para establecer el nombre del comensal 
      * construccion del setter de la variable nombreComensal
      */
-    public void setNombreComensal(String nombreComensual) {
+    public void setNombreComensal(String nombreComensal) {
         this.nombreComensal = nombreComensal;
     }
 
@@ -36,7 +36,7 @@ public class Comensal {
      * metodo para establecer la cedula del comensal 
      * construccion del setter de la variable cedulaComensal
      */
-    public void setCedulaComensal(String cedulaComensual) {
+    public void setCedulaComensal(String cedulaComensal) {
         this.cedulaComensal = cedulaComensal;
     }
 
