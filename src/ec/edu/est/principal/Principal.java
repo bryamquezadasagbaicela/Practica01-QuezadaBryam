@@ -15,6 +15,7 @@ import java.util.Scanner; // Importa el escaner para leer datos ingresados por e
 
 /**
  * clase principal
+ *
  * @author Bryam Quezada
  * @since 2019
  * @version 2.0
@@ -44,17 +45,22 @@ public class Principal {
                 case 1:
                     System.out.println("-----------------------------------------");
                     //Crear objeto (instanciar)
+                    Scanner scc = new Scanner(System.in);
                     Comensal c = new Comensal();
+                    String nombre = scc.nextLine();
+                    String cedula = scc.nextLine();
+                    String ubicacion = scc.nextLine();
+
                     //Seteo o especificación de los datos del objeto Comensal.
-                    c.setNombreComensal("BryamQuezada");
-                    c.setCedulaComensal("0107136699");
-                    c.setUbicacion("Ricaurte");
+                    c.setNombreComensal(nombre);
+                    c.setCedulaComensal(cedula);
+                    c.setUbicacion(ubicacion);
                     //Recuperación de los valores
                     System.out.println("clase: Comensal");
                     System.out.println("objeto:");
-                    System.out.println("\tNombreComensal:" + c.getNombreComensal());
-                    System.out.println("\tCedulaComensal:" + c.getCedulaComensal());
-                    System.out.println("\tUbicacion:" + c.getUbicacion());
+                    System.out.println("\tNombre Comensal: " + c.getNombreComensal());
+                    System.out.println("\tCedula Comensal: " + c.getCedulaComensal());
+                    System.out.println("\tUbicacion: " + c.getUbicacion());
                     //Mostrar valores a partir de método toString()
                     System.out.println("\ntoString():\n" + c.toString());
                     System.out.println("-----------------------------------------");
@@ -62,14 +68,20 @@ public class Principal {
                 case 2:
                     System.out.println("-----------------------------------------");
                     //Crear objeto (instanciar)
+                    Scanner scv = new Scanner(System.in);
                     Reservacion r = new Reservacion();
+                    String numero = scv.nextLine();
+                    String fecha = scv.nextLine();
+                    String hora = scv.nextLine();
                     //Seteo o especificación de los datos del objeto Reservacion.
-                    r.setNumeroReservacion("54");
-                    r.setFechaReservacion(null);
+                    r.setNumeroReservacion(numero);
+                    r.setFechaReservacion(fecha);
+                    r.setHoraReservacion(hora);
                     System.out.println("clase: Mesa");
                     System.out.println("objeto:");
-                    System.out.println("\tnumero reservacion:" + r.getNumeroReservacion());
-                    System.out.println("\tfecha reservacion:" + r.getFechaReservacion());
+                    System.out.println("\tnumero reservacion: " + r.getNumeroReservacion());
+                    System.out.println("\tfecha reservacion: " + r.getFechaReservacion());
+                    System.out.println("\thora reservacion: " + r.getHoraReservacion());
                     //Mostrar valores a partir de método toString()
                     System.out.println("\ntoString():\n" + r.toString());
                     System.out.println("-----------------------------------------");
@@ -77,11 +89,15 @@ public class Principal {
                 case 3:
                     System.out.println("-----------------------------------------");
                     //Crear objeto (instanciar)
+                    Scanner scvb = new Scanner(System.in);
                     Mesa m = new Mesa();
+                    String ubi = scvb.nextLine();
+                    String numesa = scvb.nextLine();
+                    String numpiso = scvb.nextLine();
                     //Seteo o especificación de los datos del objeto Mesa.
-                    m.setUbicacionSucursal("Av. Remigio Crespo y Remigio Romero Esq.");
-                    m.setNumeroMesa("12");
-                    m.setNumeroPiso("2 ");
+                    m.setUbicacionSucursal(ubi);
+                    m.setNumeroMesa(numesa);
+                    m.setNumeroPiso(numpiso);
                     System.out.println("clase: Mesa");
                     System.out.println("objeto:");
                     System.out.println("\tUbicacion:" + m.getUbicacionSucursal());
@@ -94,11 +110,15 @@ public class Principal {
                 case 4:
                     System.out.println("-----------------------------------------");
                     //Crear objeto (instanciar)
+                    Scanner s = new Scanner(System.in);
                     Menu mn = new Menu();
+                    String nomplato = s.nextLine();
+                    String nmplato = s.nextLine();
+                    String contenido = s.nextLine();
                     //Seteo o especificación de los datos del objeto Menu.
-                    mn.setNombrePlato("Seco de Pollo");
-                    mn.setNumeroPlatos("4");
-                    mn.setContenidoPlato("arroz, pollo, ensalada y papas fritas");
+                    mn.setNombrePlato(nomplato);
+                    mn.setNumeroPlatos(nmplato);
+                    mn.setContenidoPlato(contenido);
                     System.out.println("clase: Menu");
                     System.out.println("objeto:");
                     System.out.println("\tNombre Plato:" + mn.getNombrePlato());
@@ -111,11 +131,15 @@ public class Principal {
                 case 5:
                     System.out.println("-----------------------------------------");
                     //Crear objeto (instanciar)
+                    Scanner scn = new Scanner(System.in);
                     Tiquet t = new Tiquet();
+                    String ubic = scn.nextLine();
+                    String usd = scn.nextLine();
+                    String fech = scn.nextLine();
                     //Seteo o especificación de los datos del objeto Tiquet.
-                    t.setUbicacionSucursal("Av de las América y Abelardo J. Andrade");
-                    t.setUsdDescripcion("1 arroz con pollo y 1 cola cola personal");
-                    t.setFecha(null);
+                    t.setUbicacionSucursal(ubic);
+                    t.setUsdDescripcion(usd);
+                    t.setFecha(fech);
                     System.out.println("clase: Tiquet");
                     System.out.println("objeto:");
                     System.out.println("\tUbicacionSucursal:" + t.getUbicacionSucursal());

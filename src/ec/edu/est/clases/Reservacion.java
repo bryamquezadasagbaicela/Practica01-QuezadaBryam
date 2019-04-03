@@ -23,8 +23,8 @@ public class Reservacion {// clase con nombre Reservacion
     }
 
     private String numeroReservacion;//numero de reservacion de cada objeto Reservacion
-    private Date fechaReservacion;//fecha de reservacion de cada objeto Reservacion
-    private int horaReservacion;//hora  de reservacion de cada objeto Reservacion
+    private String fechaReservacion;//fecha de reservacion de cada objeto Reservacion
+    private String horaReservacion;//hora  de reservacion de cada objeto Reservacion
 
     /**
      * metodo para establecer el numero de reserva construccion del setter de la
@@ -38,7 +38,7 @@ public class Reservacion {// clase con nombre Reservacion
      * metodo para establecer la fecha de reservacion construccion del setter de
      * la variable fechaReservacion
      */
-    public void setFechaReservacion(Date fechaReservacion) {
+    public void setFechaReservacion(String fechaReservacion) {
         this.fechaReservacion = fechaReservacion;
     }
 
@@ -46,7 +46,7 @@ public class Reservacion {// clase con nombre Reservacion
      * metodo para establecer la hora de la reservacion construccion del setter
      * de la variable horaReservacion
      */
-    public void setHoraReservacion(int horaReservacion) {
+    public void setHoraReservacion(String horaReservacion) {
         this.horaReservacion = horaReservacion;
     }
 
@@ -62,7 +62,7 @@ public class Reservacion {// clase con nombre Reservacion
      *
      * metodo para obtener la fecha de reservacion del objeto fechaReservacion
      */
-    public Date getFechaReservacion() {
+    public String getFechaReservacion() {
         return fechaReservacion;
     }
 
@@ -70,7 +70,7 @@ public class Reservacion {// clase con nombre Reservacion
      *
      * metodo para obtener la hora de reservacion del objeto horaReservacion
      */
-    public int getHoraReservacion() {
+    public String getHoraReservacion() {
         return horaReservacion;
     }
 
