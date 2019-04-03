@@ -20,7 +20,7 @@ public class Tiquet {// clase con nombre Tiquet
 
     private String ubicacionSucursal;//ubicacion de sucursal de cada objeto Tiquet
     private String usdDescripcion;//usd descripcion de cada objeto Tiquet
-    private Date fecha;//fecha de cada objeto Tiquet
+    private String fecha;//fecha de cada objeto Tiquet
 
     /**
      * metodo para establecer la ubicacion de la Sucursal construccion del
@@ -42,7 +42,7 @@ public class Tiquet {// clase con nombre Tiquet
      * metodo para establecer la fecha construccion del setter de la variable
      * fecha
      */
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -67,7 +67,7 @@ public class Tiquet {// clase con nombre Tiquet
      *
      * metodo para obtener la fecha del objeto fecha
      */
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
