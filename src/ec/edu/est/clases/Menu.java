@@ -12,40 +12,36 @@ package ec.edu.est.clases;
  * @since 2019
  * @version 2.0
  */
-public class Menu {
+public class Menu { //clase con el nombre Menu
 
     @Override
     public String toString() {
         return "Menu{" + "nombrePlato=" + nombrePlato + ", numeroPlatos=" + numeroPlatos + ", contenidoPlato=" + contenidoPlato + '}';
     }
-/**
- * nombre de plato de cada objeto Menu
- * numero de platos de cada objeto Menu
- * contenido de platos de cada objeto Menu
- */
-    private String nombrePlato;
-    private String numeroPlatos;
-    private String contenidoPlato;
+
+    private String nombrePlato; //nombre de plato de cada objeto Menu
+    private String numeroPlatos; // numero de platos de cada objeto Menu
+    private String contenidoPlato; //contenido de platos de cada objeto Menu
 
     /**
-     * metodo para establecer el nombre del plato 
-     * construccion del setter de la variable nombrePlato
+     * metodo para establecer el nombre del plato construccion del setter de la
+     * variable nombrePlato
      */
     public void setNombrePlato(String nombrePlato) {
         this.nombrePlato = nombrePlato;
     }
 
     /**
-     * metodo para establecer el numero de platos 
-     * construccion del setter de la variable numeroPlatos
+     * metodo para establecer el numero de platos construccion del setter de la
+     * variable numeroPlatos
      */
     public void setNumeroPlatos(String numeroPlatos) {
         this.numeroPlatos = numeroPlatos;
     }
 
     /**
-     * metodo para establecer el contenido del plato 
-     * construccion del setter de la variable contenidoPlato
+     * metodo para establecer el contenido del plato construccion del setter de
+     * la variable contenidoPlato
      */
     public void setContenidoPlato(String contenidoPlato) {
         this.contenidoPlato = contenidoPlato;
@@ -75,4 +71,4 @@ public class Menu {
         return contenidoPlato;
     }
 
-}
+}//cierre clase

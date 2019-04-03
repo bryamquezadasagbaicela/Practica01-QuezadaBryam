@@ -13,36 +13,36 @@ package ec.edu.est.clases;
  * @version 2.0
  *
  */
-public class Comensal {
+public class Comensal {// clase Comensal
 
     @Override
     public String toString() {
         return "Comensal{" + "nombreComensal=" + nombreComensal + ", cedulaComensal=" + cedulaComensal + ", ubicacion=" + ubicacion + '}';
     }
 
-    private String nombreComensal;
-    private String cedulaComensal;
-    private String ubicacion;
+    private String nombreComensal;//nombre de comensal de cada objeto Comensal
+    private String cedulaComensal;//cedula de comensal de cada objeto Comensal
+    private String ubicacion;//ubicacion de cada objeto Comensal
 
     /**
-     * metodo para establecer el nombre del comensal 
-     * construccion del setter de la variable nombreComensal
+     * metodo para establecer el nombre del comensal construccion del setter de
+     * la variable nombreComensal
      */
     public void setNombreComensal(String nombreComensal) {
         this.nombreComensal = nombreComensal;
     }
 
     /**
-     * metodo para establecer la cedula del comensal 
-     * construccion del setter de la variable cedulaComensal
+     * metodo para establecer la cedula del comensal construccion del setter de
+     * la variable cedulaComensal
      */
     public void setCedulaComensal(String cedulaComensal) {
         this.cedulaComensal = cedulaComensal;
     }
 
     /**
-     * metodo para establecer la ubicacion 
-     * construccion del setter de la variable ubicacion
+     * metodo para establecer la ubicacion construccion del setter de la
+     * variable ubicacion
      */
     public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
@@ -71,4 +71,4 @@ public class Comensal {
     public String getUbicacion() {
         return ubicacion;
     }
-}
+}//cierre clase

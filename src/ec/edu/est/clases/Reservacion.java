@@ -15,39 +15,37 @@ import java.util.Date;
  * @version 2.0
  *
  */
-public class Reservacion {
+public class Reservacion {// clase con nombre Reservacion
 
     @Override
     public String toString() {
         return "Reservacion{" + "numeroReservacion=" + numeroReservacion + ", fechaReservacion=" + fechaReservacion + ", horaReservacion=" + horaReservacion + '}';
     }
 
-    private String numeroReservacion;
-    private Date fechaReservacion;
-    private int horaReservacion;
+    private String numeroReservacion;//numero de reservacion de cada objeto Reservacion
+    private Date fechaReservacion;//fecha de reservacion de cada objeto Reservacion
+    private int horaReservacion;//hora  de reservacion de cada objeto Reservacion
 
     /**
-     * metodo para establecer el numero de reserva 
-     * construccion del setter de la variable numeroReservacion
+     * metodo para establecer el numero de reserva construccion del setter de la
+     * variable numeroReservacion
      */
     public void setNumeroReservacion(String numeroReservacion) {
         this.numeroReservacion = numeroReservacion;
     }
 
     /**
-     * metodo para establecer la fecha de reservacion 
-     * construccion del setter de la variable fechaReservacion
+     * metodo para establecer la fecha de reservacion construccion del setter de
+     * la variable fechaReservacion
      */
-
     public void setFechaReservacion(Date fechaReservacion) {
         this.fechaReservacion = fechaReservacion;
     }
 
     /**
-     * metodo para establecer la hora de la reservacion 
-     * construccion del setter de la variable horaReservacion
+     * metodo para establecer la hora de la reservacion construccion del setter
+     * de la variable horaReservacion
      */
-
     public void setHoraReservacion(int horaReservacion) {
         this.horaReservacion = horaReservacion;
     }

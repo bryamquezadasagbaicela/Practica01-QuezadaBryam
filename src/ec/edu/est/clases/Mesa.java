@@ -7,41 +7,41 @@ package ec.edu.est.clases;
 
 /**
  * clase con el nombre Mesa
- * 
+ *
  * @author Bryam Quezada
  * @since 2019
  * @version 2.0
  */
-public class Mesa {
+public class Mesa {//clase con nombre Mesa
 
     @Override
     public String toString() {
         return "Mesa{" + "ubicacionSucursal=" + ubicacionSucursal + ", numeroMesa=" + numeroMesa + ", numeroPiso=" + numeroPiso + '}';
     }
 
-    private String ubicacionSucursal;
-    private String numeroMesa;
-    private String numeroPiso;
+    private String ubicacionSucursal;//ubicacion de cada objeto Menu
+    private String numeroMesa;//numero de mesa de cada objeto Menu
+    private String numeroPiso;//numero de piso de cada objeto Menu
 
     /**
-     * metodo para establecer la ubicacion de la Sucursal 
-     * construccion del setter de la variable ubicacionSucursal
+     * metodo para establecer la ubicacion de la Sucursal construccion del
+     * setter de la variable ubicacionSucursal
      */
     public void setUbicacionSucursal(String ubicacionSucursal) {
         this.ubicacionSucursal = ubicacionSucursal;
     }
 
     /**
-     * metodo para establecer el numero de mesa
-     * construccion del setter de la variable numeroMesa
+     * metodo para establecer el numero de mesa construccion del setter de la
+     * variable numeroMesa
      */
     public void setNumeroMesa(String numeroMesa) {
         this.numeroMesa = numeroMesa;
     }
 
     /**
-     * metodo para establecer el numero de piso 
-     * construccion del setter de la variable numeroPiso
+     * metodo para establecer el numero de piso construccion del setter de la
+     * variable numeroPiso
      */
     public void setNumeroPiso(String numeroPiso) {
         this.numeroPiso = numeroPiso;
@@ -49,7 +49,8 @@ public class Mesa {
 
     /**
      *
-     * metodo para obtener la ubicacion de la sucursal del objeto ubicacionSucursal
+     * metodo para obtener la ubicacion de la sucursal del objeto
+     * ubicacionSucursal
      */
     public String getUbicacionSucursal() {
         return ubicacionSucursal;
@@ -71,4 +72,4 @@ public class Mesa {
         return numeroPiso;
     }
 
-}
+}//cierre clase
